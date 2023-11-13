@@ -1,0 +1,22 @@
+<ul>
+  <li *ngFor="let kit of kit">
+    <a routerLink="/food/{{kit.id}}">
+      <img [src]="kit.imageUrl" [alt]="kit.name"/>
+      <div class="content">
+        <div class="name">
+          {{kit.name}}
+        </div>
+        <span class="favorite {{kit.favorite?'':'not'}}">
+          ❤
+        </span>
+        <div class="product-item-footer">
+          <div class="price">
+            <span>
+              {{kit.price | currency}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
