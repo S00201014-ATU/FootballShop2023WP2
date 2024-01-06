@@ -8,11 +8,12 @@ import { HeaderComponent } from '../../partials/header/header.component';
 import { SearchComponent } from '../../partials/search/search.component';
 import { HomeComponent } from '../home/home.component';
 import { CartPageComponent } from '../cart-page/cart-page.component';
+import { TitleComponent } from '../../partials/title/title.component';
 
 @Component({
   selector: 'app-kit-page',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, HomeComponent, CartPageComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, HomeComponent, CartPageComponent, TitleComponent],
   templateUrl: './kit-page.component.html',
   styleUrl: './kit-page.component.css'
 })

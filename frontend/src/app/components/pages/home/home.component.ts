@@ -7,11 +7,12 @@ import { HeaderComponent } from '../../partials/header/header.component';
 import { SearchComponent } from '../../partials/search/search.component';
 import { KitPageComponent } from '../kit-page/kit-page.component';
 import { CartPageComponent } from '../cart-page/cart-page.component';
+import { TitleComponent } from '../../partials/title/title.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, CartPageComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, CartPageComponent, TitleComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
