@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './components/pages/home/home.component';
+import { KitPageComponent } from './components/pages/kit-page/kit-page.component';
 
 export const routes: Routes = [
   {
@@ -8,6 +9,12 @@ export const routes: Routes = [
   },
   {
     path: 'search/:searchTerm', component: HomeComponent
+  },
+  {
+    path: 'tag/:tag', component: HomeComponent
+  },
+  {
+    path: 'kits/:id', component: KitPageComponent
   }
 ];
 

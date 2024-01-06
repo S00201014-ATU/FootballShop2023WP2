@@ -1,0 +1,25 @@
+
+
+<div class="container">
+  <img [src]="kit.imageUrl" [alt]="kit.name">
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{kit.name}}
+      </span>
+      <span class="favorite {{kit.favorite? '': 'not'}}">❤</span>
+    </div>
+
+    <div class="price">
+      <span>
+        {{kit.price | currency}}
+      </span>
+    </div>
+
+    <div>
+      <button>Add to cart</button>
+    </div>
+  </div>
+</div>
+

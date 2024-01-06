@@ -1,5 +1,4 @@
 import {Kit} from './app/shared/models/Kit';
-
 export const sample_kits: Kit[] = [
   {
     id:'1',
@@ -7,7 +6,7 @@ export const sample_kits: Kit[] = [
     price: 50,
     favorite: false,
     imageUrl: 'assets/Kit-1.jpg',
-    tags: ['England', 'Champions League', 'Nike'],
+    tags: ['England', 'Champions League'],
   },
 
   {
@@ -16,7 +15,7 @@ export const sample_kits: Kit[] = [
     price: 100,
     favorite: false,
     imageUrl: 'assets/Kit-2.jpg',
-    tags: ['Spain', 'Champions League', 'Adidas'],
+    tags: ['Spain', 'Champions League'],
   },
 
   {
@@ -25,7 +24,7 @@ export const sample_kits: Kit[] = [
     price: 80,
     favorite: true,
     imageUrl: 'assets/Kit-3.jpg',
-    tags: ['Spain', 'Europa League', 'Nike'],
+    tags: ['Spain', 'Europa League'],
   },
 
   {
@@ -34,7 +33,7 @@ export const sample_kits: Kit[] = [
     price: 10,
     favorite: false,
     imageUrl: 'assets/Kit-4.jpg',
-    tags: ['Italy', 'Europa League', 'Puma'],
+    tags: ['Italy', 'Europa League'],
   },
 
   {
@@ -43,7 +42,7 @@ export const sample_kits: Kit[] = [
     price: 86,
     favorite: false,
     imageUrl: 'assets/Kit-5.jpg',
-    tags: ['Germany', 'Champions League', 'Adidas'],
+    tags: ['Germany', 'Champions Leagu'],
   },
 
   {
@@ -52,7 +51,7 @@ export const sample_kits: Kit[] = [
     price: 25,
     favorite: true,
     imageUrl: 'assets/Kit-6.jpg',
-    tags: ['Scotland', 'Champions League', 'Adidas'],
+    tags: ['Scotland', 'Champions League'],
   },
 
   {
@@ -61,7 +60,7 @@ export const sample_kits: Kit[] = [
     price: 60,
     favorite: false,
     imageUrl: 'assets/Kit-7.jpg',
-    tags: ['England', 'Conference League', 'Nike'],
+    tags: ['England', 'Conference League'],
   },
 
   {
@@ -70,7 +69,7 @@ export const sample_kits: Kit[] = [
     price: 8,
     favorite: false,
     imageUrl: 'assets/Kit-8.jpg',
-    tags: ['Portugal', 'Conference League', 'New Balance'],
+    tags: ['Portugal', 'Conference League'],
   },
 
   {
@@ -79,7 +78,7 @@ export const sample_kits: Kit[] = [
     price: 78,
     favorite: false,
     imageUrl: 'assets/Kit-9.jpg',
-    tags: ['Scotland', 'Europa League', 'Castore'],
+    tags: ['Scotland', 'Europa League'],
   },
 
   {
@@ -88,7 +87,7 @@ export const sample_kits: Kit[] = [
     price: 21,
     favorite: false,
     imageUrl: 'assets/Kit-10.jpg',
-    tags: ['France', 'Champions League', 'Nike'],
+    tags: ['France', 'Champions League'],
   },
 
   {
@@ -97,7 +96,7 @@ export const sample_kits: Kit[] = [
     price: 44,
     favorite: false,
     imageUrl: 'assets/Kit-11.jpg',
-    tags: ['England', 'Europa League', 'Nike'],
+    tags: ['England', 'Europa League'],
   },
 
   {
@@ -106,7 +105,7 @@ export const sample_kits: Kit[] = [
     price: 20,
     favorite: true,
     imageUrl: 'assets/Kit-12.jpg',
-    tags: ['Germany', 'Conference League', 'Puma'],
+    tags: ['Germany', 'Conference League'],
   },
 
   {
@@ -115,7 +114,7 @@ export const sample_kits: Kit[] = [
     price: 7,
     favorite: false,
     imageUrl: 'assets/Kit-13.jpg',
-    tags: ['England', 'Champions League', 'Puma'],
+    tags: ['England', 'Champions League'],
   },
 
   {
@@ -124,7 +123,7 @@ export const sample_kits: Kit[] = [
     price: 99,
     favorite: true,
     imageUrl: 'assets/Kit-14.jpg',
-    tags: ['England', 'Europa League', 'Adidas'],
+    tags: ['England', 'Europa League'],
   },
 
   {
@@ -133,7 +132,7 @@ export const sample_kits: Kit[] = [
     price: 16,
     favorite: false,
     imageUrl: 'assets/Kit-15.jpg',
-    tags: ['England', 'Conference League', 'Castore'],
+    tags: ['England', 'Conference League'],
   },
 
   {
@@ -142,7 +141,7 @@ export const sample_kits: Kit[] = [
     price: 83,
     favorite: false,
     imageUrl: 'assets/Kit-16.jpg',
-    tags: ['Italy', 'Champions League', 'Nike'],
+    tags: ['Italy', 'Champions League'],
   },
 
   {
@@ -151,7 +150,7 @@ export const sample_kits: Kit[] = [
     price: 76,
     favorite: false,
     imageUrl: 'assets/Kit-17.jpg',
-    tags: ['Portugal', 'Conference League', 'Adidas'],
+    tags: ['Portugal', 'Conference League'],
   },
 
   {
@@ -160,7 +159,7 @@ export const sample_kits: Kit[] = [
     price: 33,
     favorite: false,
     imageUrl: 'assets/Kit-18.jpg',
-    tags: ['England', 'Europa League', 'Nike'],
+    tags: ['England', 'Europa League'],
   },
 
   {
@@ -169,7 +168,7 @@ export const sample_kits: Kit[] = [
     price: 48,
     favorite: false,
     imageUrl: 'assets/Kit-19.jpg',
-    tags: ['Holland', 'Champions League', 'Adidas'],
+    tags: ['Holland', 'Champions League'],
   },
 
   {
@@ -178,6 +177,8 @@ export const sample_kits: Kit[] = [
     price: 70,
     favorite: false,
     imageUrl: 'assets/Kit-20.jpg',
-    tags: ['Ireland', 'Conference League', 'Joma'],
+    tags: ['Ireland', 'Conference League'],
   },
 ]
+
+
