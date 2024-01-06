@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './components/pages/home/home.component';
 import { KitPageComponent } from './components/pages/kit-page/kit-page.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 
 export const routes: Routes = [
   {
@@ -15,6 +16,9 @@ export const routes: Routes = [
   },
   {
     path: 'kits/:id', component: KitPageComponent
+  },
+  {
+    path: 'cart-page', component:CartPageComponent
   }
 ];
 

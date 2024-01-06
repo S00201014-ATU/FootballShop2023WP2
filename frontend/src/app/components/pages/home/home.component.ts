@@ -6,11 +6,12 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../partials/header/header.component';
 import { SearchComponent } from '../../partials/search/search.component';
 import { KitPageComponent } from '../kit-page/kit-page.component';
+import { CartPageComponent } from '../cart-page/cart-page.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, CartPageComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
