@@ -1,10 +1,14 @@
+<app-not-found
+[visible]="!kit.id" notFoundMessage="Kit Not Found"
+notFoundMessage="Kit Not Found"
+resetLinkText="Back To Homepage"
+></app-not-found>
 
-
-<div class="container">
+<div *ngIf="kit.id" class="container">
   <img [src]="kit.imageUrl" [alt]="kit.name">
 
   <div class="details">
-    <div class="header">
+    <div class="header">`
       <span class="name">
         {{kit.name}}
       </span>

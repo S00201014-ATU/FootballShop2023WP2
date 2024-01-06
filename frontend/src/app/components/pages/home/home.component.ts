@@ -8,11 +8,12 @@ import { SearchComponent } from '../../partials/search/search.component';
 import { KitPageComponent } from '../kit-page/kit-page.component';
 import { CartPageComponent } from '../cart-page/cart-page.component';
 import { TitleComponent } from '../../partials/title/title.component';
+import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, CartPageComponent, TitleComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, CartPageComponent, TitleComponent, NotFoundComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

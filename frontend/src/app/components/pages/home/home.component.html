@@ -1,5 +1,9 @@
 <app-search></app-search>
 
+<app-not-found
+[visible]="!kit || !kit.length"
+resetLinkText="Reset Search"
+></app-not-found>
 <ul>
   <li *ngFor="let kit of kit">
     <a routerLink="/kits/{{kit.id}}">
