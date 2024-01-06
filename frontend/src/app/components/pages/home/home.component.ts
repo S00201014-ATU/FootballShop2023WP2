@@ -2,21 +2,27 @@ import { KitService } from './../../../services/kit.service';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Kit } from '../../../shared/models/Kit';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../partials/header/header.component';
-
+import { SearchComponent } from '../../partials/search/search.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
 
   kit:Kit[] = [];
-  constructor(private KitService:KitService) {
-    this.kit = KitService.getAll();
+  constructor(private KitService:KitService, activatedRoute: ActivatedRoute) {
+    activatedRoute.params.subscribe((params)=>{
+      if(params.searchTerm)
+      this.kit = this.KitService.getAllKitsBySearchTerm(params.searchTerm)
+      else
+      this.kit = KitService.getAll();
+    })
+
    }
 
   ngOnInit(): void {
