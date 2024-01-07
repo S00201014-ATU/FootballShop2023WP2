@@ -1,10 +1,10 @@
 <app-not-found
-[visible]="!kit.id" notFoundMessage="Kit Not Found"
+[visible]="!kit" notFoundMessage="Kit Not Found"
 notFoundMessage="Kit Not Found"
 resetLinkText="Back To Homepage"
 ></app-not-found>
 
-<div *ngIf="kit.id" class="container">
+<div *ngIf="kit" class="container">
   <img [src]="kit.imageUrl" [alt]="kit.name">
 
   <div class="details">

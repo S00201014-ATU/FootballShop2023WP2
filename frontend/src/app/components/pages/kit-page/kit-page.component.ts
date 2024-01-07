@@ -24,7 +24,8 @@ kit!: Kit;
   constructor(activatedRoute: ActivatedRoute, kitService:KitService, private cartService:CartService, private router: Router) {
     activatedRoute.params.subscribe((params)=>{
       if(params.id)
-      this.kit = kitService.getKitById(params.id);
+     kitService.getKitById(params.id).subscribe(serverKits =>{
+    this.kit = serverKits})
     })
    }
 

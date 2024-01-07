@@ -10,6 +10,7 @@ import { KitPageComponent } from '../kit-page/kit-page.component';
 import { CartPageComponent } from '../cart-page/cart-page.component';
 import { TitleComponent } from '../../partials/title/title.component';
 import { NotFoundComponent } from '../../partials/not-found/not-found.component';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -22,11 +23,16 @@ export class HomeComponent implements OnInit{
 
   kit:Kit[] = [];
   constructor(private KitService:KitService, activatedRoute: ActivatedRoute) {
+   let kitsObservable:Observable<Kit[]>;
     activatedRoute.params.subscribe((params)=>{
       if(params.searchTerm)
-      this.kit = this.KitService.getAllKitsBySearchTerm(params.searchTerm)
+      kitsObservable = this.KitService.getAllKitsBySearchTerm(params.searchTerm)
       else
-      this.kit = KitService.getAll();
+      kitsObservable = KitService.getAll();
+
+      kitsObservable.subscribe((serverKits) =>{
+        this.kit = serverKits;
+      })
     })
 
    }
