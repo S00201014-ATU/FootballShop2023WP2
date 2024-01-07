@@ -12,11 +12,12 @@ import { CartService } from '../../../services/cart.service';
 import { CartItem } from '../../../shared/models/CartItem';
 import { TitleComponent } from '../../partials/title/title.component';
 import { NotFoundComponent } from '../../partials/not-found/not-found.component';
+import { LoginPageComponent } from '../login-page/login-page.component';
 
 @Component({
   selector: 'app-cart-page',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, HomeComponent, TitleComponent, NotFoundComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, HomeComponent, LoginPageComponent, TitleComponent, NotFoundComponent],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.css'
 })

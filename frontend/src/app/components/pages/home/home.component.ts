@@ -1,3 +1,4 @@
+import { LoginPageComponent } from './../login-page/login-page.component';
 import { KitService } from './../../../services/kit.service';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -13,7 +14,7 @@ import { NotFoundComponent } from '../../partials/not-found/not-found.component'
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, CartPageComponent, TitleComponent, NotFoundComponent],
+  imports: [CommonModule, RouterModule, HeaderComponent, LoginPageComponent, SearchComponent, KitPageComponent, CartPageComponent, TitleComponent, NotFoundComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

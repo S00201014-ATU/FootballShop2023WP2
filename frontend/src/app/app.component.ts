@@ -5,12 +5,15 @@ import { HeaderComponent } from "./components/partials/header/header.component";
 import { HomeComponent } from './components/pages/home/home.component';
 import { SearchComponent } from './components/partials/search/search.component';
 import { KitPageComponent } from './components/pages/kit-page/kit-page.component';
+import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, HeaderComponent, HomeComponent, SearchComponent, KitPageComponent]
+    imports: [CommonModule, RouterOutlet, ReactiveFormsModule, HeaderComponent, HomeComponent, SearchComponent, KitPageComponent, LoginPageComponent]
 })
 export class AppComponent {
   title = 'frontend';

@@ -10,11 +10,12 @@ import { HomeComponent } from '../home/home.component';
 import { CartPageComponent } from '../cart-page/cart-page.component';
 import { TitleComponent } from '../../partials/title/title.component';
 import { NotFoundComponent } from '../../partials/not-found/not-found.component';
+import { LoginPageComponent } from '../login-page/login-page.component';
 
 @Component({
   selector: 'app-kit-page',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, HomeComponent, CartPageComponent, TitleComponent, NotFoundComponent],
+  imports: [CommonModule, LoginPageComponent, RouterModule, HeaderComponent, SearchComponent, HomeComponent, CartPageComponent, TitleComponent, NotFoundComponent],
   templateUrl: './kit-page.component.html',
   styleUrl: './kit-page.component.css'
 })

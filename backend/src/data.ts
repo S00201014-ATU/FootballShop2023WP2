@@ -180,4 +180,12 @@ export const sample_kits: any[] = [
   },
 ]
 
-
+export const sample_users: any[] = [
+    {
+        name: "John Doe",
+        email: "john@gmail.com",
+        password: "12345",
+        address: "Sligo",
+        isAdmin: true,
+    },
+];
