@@ -14,11 +14,14 @@ import { TitleComponent } from '../../partials/title/title.component';
 import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 import { CartPageComponent } from '../cart-page/cart-page.component';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-
+import { InputContainerComponent } from '../../partials/input-container/input-container.component';
+import { InputValidationComponent } from '../../partials/input-validation/input-validation.component';
+import { TextInputComponent } from '../../partials/text-input/text-input.component';
+import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [CommonModule, RouterModule, RouterModule, ReactiveFormsModule, HeaderComponent, SearchComponent, CartPageComponent, KitPageComponent, HomeComponent, TitleComponent, NotFoundComponent ],
+  imports: [CommonModule, DefaultButtonComponent, InputValidationComponent, TextInputComponent, InputContainerComponent, RouterModule, ReactiveFormsModule, HeaderComponent, SearchComponent, CartPageComponent, KitPageComponent, HomeComponent, TitleComponent, NotFoundComponent ],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css'
 })
@@ -47,5 +50,9 @@ export class LoginPageComponent implements OnInit{
 
     alert(`email: ${this.fc.email.value},
      password: ${this.fc.password.value}`)
+
+
   }
+
+
 }

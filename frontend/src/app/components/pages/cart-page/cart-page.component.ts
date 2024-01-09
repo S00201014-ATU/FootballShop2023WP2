@@ -1,3 +1,4 @@
+import { OrderItemsListComponent } from './../../partials/order-items-list/order-items-list.component';
 import { KitService } from './../../../services/kit.service';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -17,7 +18,7 @@ import { LoginPageComponent } from '../login-page/login-page.component';
 @Component({
   selector: 'app-cart-page',
   standalone: true,
-  imports: [CommonModule, RouterModule, HeaderComponent, SearchComponent, KitPageComponent, HomeComponent, LoginPageComponent, TitleComponent, NotFoundComponent],
+  imports: [CommonModule,RouterModule, HeaderComponent, SearchComponent, OrderItemsListComponent, KitPageComponent, HomeComponent, LoginPageComponent, TitleComponent, NotFoundComponent],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.css'
 })

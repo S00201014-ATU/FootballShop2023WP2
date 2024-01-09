@@ -15,3 +15,8 @@ form{
   flex-direction: column;
   justify-content: center;
 }
+
+.error-list{
+  color: red;
+  font-size: 0.95rem;
+}
