@@ -1,4 +1,6 @@
+
 import {Kit} from './app/shared/models/Kit';
+import { User } from './app/shared/models/User';
 export const sample_kits: Kit[] = [
   {
     id:'1',
@@ -180,5 +182,4 @@ export const sample_kits: Kit[] = [
     tags: ['Ireland', 'Conference League'],
   },
 ]
-
 

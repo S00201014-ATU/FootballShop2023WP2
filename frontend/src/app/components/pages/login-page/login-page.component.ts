@@ -2,7 +2,7 @@ import { KitService } from './../../../services/kit.service';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Kit } from '../../../shared/models/Kit';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../partials/header/header.component';
 import { SearchComponent } from '../../partials/search/search.component';
 import { KitPageComponent } from '../kit-page/kit-page.component';
@@ -18,6 +18,10 @@ import { InputContainerComponent } from '../../partials/input-container/input-co
 import { InputValidationComponent } from '../../partials/input-validation/input-validation.component';
 import { TextInputComponent } from '../../partials/text-input/text-input.component';
 import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
+import { UserService } from '../../../services/user.service';
+import { User } from '../../../shared/models/User';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @Component({
   selector: 'app-login-page',
   standalone: true,
@@ -31,13 +35,17 @@ export class LoginPageComponent implements OnInit{
 
   isSubmitted = false;
 
-  constructor(private formBuilder:FormBuilder) {}
+  returnUrl = '';
+
+  constructor(private formBuilder:FormBuilder, private userService:UserService, private activatedRoute:ActivatedRoute, private router:Router) {}
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
       email:['', [Validators.required, Validators.email]],
       password:['', Validators.required]
     });
+
+    this.returnUrl = this.activatedRoute.snapshot.queryParams.returnUrl;
   }
 
   get fc(){
@@ -48,10 +56,12 @@ export class LoginPageComponent implements OnInit{
     this.isSubmitted = true;
     if(this.loginForm.invalid) return;
 
-    alert(`email: ${this.fc.email.value},
-     password: ${this.fc.password.value}`)
 
 
+
+     this.userService.login({email:this.fc.email.value, password: this.fc.password.value}).subscribe(() =>{
+      this.router.navigateByUrl(this.returnUrl);
+     })
   }
 
 
